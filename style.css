@@ -7,7 +7,7 @@
 .hero{
     width: 100%;
     min-height:100vh;
-    background:linear-gradient(45deg,#08001f),#30197d;
+    background:rgb(75, 26, 125);
     color: #fff;
     position: relative;
 }
@@ -18,7 +18,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-color: rgb(0, 255, 8);
+    background-color: rgb(153, 41, 202);
 }
 .clock{
     width: 100%;
@@ -28,4 +28,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.container::before{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: #f41b75;
+    border-radius: 5px;
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    z-index: -1;
+}
+.container::after{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background:#419aff;
+    border-radius: 50%;
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    z-index: -1;
 }
