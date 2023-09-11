@@ -56,9 +56,9 @@
     width: 110px;
     display: inline-block;
     text-align: center;
+    position: relative;
 }
-.clock  span::after{
-    
+.clock span::after{
     font-size: 16px;
     position: absolute;
     bottom: -5px;
@@ -71,6 +71,6 @@
 #min::after{
     content: 'MINS';
 }
-#hrs::after{
+#sec::after{
     content: 'SEC';
 }
